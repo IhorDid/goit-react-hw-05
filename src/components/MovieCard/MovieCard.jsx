@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const MovieCard = ({ moviesId }) => {
+  const location = useLocation();
   return (
-    <Link>
+    <Link to={`/movies/${moviesId.id}`} state={location}>
       <div>
         <p>{moviesId.title}</p>
       </div>

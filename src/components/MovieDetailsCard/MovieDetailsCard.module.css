@@ -1,0 +1,12 @@
+.wrapper {
+  padding-top: 50px;
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+
+.fit {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}

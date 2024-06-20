@@ -23,9 +23,9 @@ const HomePage = () => {
   }, []);
   return (
     <>
-      <h1>
+      <div>
         <h1>Tranding today</h1>
-      </h1>
+      </div>
       {movies && <MovieList movies={movies} />}
       {loading && <Load />}
       {error && <Error />}
